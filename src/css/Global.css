@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #1E3658;
+    --secondary-color: #477A9B;
+    --card-color: #F7F7F8;
+}
+
+header {
+    background-color: var(--secondary-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0 50px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 610px) {
+    header .search {
+        width: 50%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
+    header .logo span {
+        font-size: 18px;
+    }
+
+    .notescard h1 {
+        font-size: 15px;
+    }
+
+    .notescard p {
+        font-size: 12px;
+    }
+}
+
+
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+    color: white;
+}
+
+.logo span {
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.search {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.search input {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    outline: none;
+}
+
+
+
+.hero-section {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    width: 30%;
+    padding: 0 20px;
+    background-color: var(--card-color);
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 900px) {
+    .input-container {
+        width: 60%;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .full-container .card-container {
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .full-container .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+
+.title {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.title input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.notes {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.notes textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 10px;
+    resize: none;
+}
+
+hr {
+    color: whitesmoke;
+}
+
+.hero-button {
+    text-align: center;
+    border-radius: 50%;
+}
+
+.hero-button button {
+    border: none;
+}
+
+.hero-button i {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 20px;
+    justify-content: center;
+}
+
+.notescard {
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.notescard hr {
+    margin: 10px 0;
+    color: whitesmoke;
+}
+
+.notescard h1,
+p {
+    word-wrap: break-word;
+}
+
+.notescard button {
+    margin: 10px 0;
+    border: none;
+}
+
+.notescard button i {
+    color: red;
+
+    text-align: right;
+}
+
+.card-btn-con {
+    display: flex;
+    justify-content: end;
+}
